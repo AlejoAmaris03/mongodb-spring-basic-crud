@@ -53,7 +53,8 @@ The backend exposes a REST API consumed by a **JavaScript frontend** (using `fet
   
 2. **Configure MongoDB connection in application.properties**
    ```properties
-   spring.data.mongodb.uri=mongodb://localhost:27017/librarydb
+   spring.data.mongodb.uri=mongodb://localhost:27017/
+   spring.data.mongodb.database=bookstore
 
 3. **Build & Run the application**
 4. **Access the application**
