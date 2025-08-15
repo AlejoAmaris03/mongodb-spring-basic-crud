@@ -59,7 +59,7 @@ The backend exposes a REST API consumed by a **JavaScript frontend** (using `fet
 3. **Build & Run the application**
 4. **Access the application**
    ```arduino
-   http://localhost:8080/view/authors
+   http://localhost:8080/views/authors
 
 ---
 
