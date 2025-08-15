@@ -1,0 +1,48 @@
+nav {
+    position: sticky;
+    top: 1.5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: .5rem;
+    border-radius: 30px;
+    background-color: var(--light-background);
+    backdrop-filter: blur(2px);
+}
+
+li {
+    padding: .3rem 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+}
+
+li:hover {
+    background-color: var(--light-over-background);
+}
+
+li:hover a {
+    color: var(--dark-text);
+}
+
+.highlight {
+    background-color: var(--light-over-background);
+}
+
+.highlight a {
+    color: var(--dark-text);
+}

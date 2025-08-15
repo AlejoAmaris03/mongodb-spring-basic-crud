@@ -1,0 +1,29 @@
+.genres {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: 100%;
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+.checkbox-input {
+    display: flex;
+    gap: 5px;
+    width: 120px;
+}
+
+.checkbox-input p {
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+    transform: scale(.8);
+}
+
+option {
+    color: var(--dark-text);
+}

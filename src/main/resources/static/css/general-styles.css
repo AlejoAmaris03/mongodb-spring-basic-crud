@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --light-text: #ececec;
+    --dark-text: #212121;
+    --light-background: rgba(255, 255, 255, .4);
+    --light-over-background: rgba(255, 255, 255, .6);
+    --primary-color: #0471b1;
+    --danger-color: #a10a05;
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    color: var(--light-text);
+}
+
+body {
+    background: radial-gradient(#323232, #212121);
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+body, 
+main,
+.content,
+.table,
+input {
+    box-sizing: border-box;
+}
+
+.swal2-warning .swal2-icon-content {
+    color: #f8bb86;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem 2rem 2rem;
+    height: 100vh;
+}
+
+.content {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 10px;
+    --webkit-box-shadow: 0px 0px 20px var(--light-background);
+    box-shadow: 0px 0px 20px var(--light-background);
+    overflow-y: auto;
+}
+
+.form {
+    height: fit-content;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-background);
+    padding: 2rem;
+    gap: 1rem;
+    border-radius: 10px;
+    width: 320px;
+}
+
+form h1 {
+    color: var(--dark-text);
+    margin-bottom: 1rem;
+}
+
+input,
+select {
+    outline: none;
+    border: 1px solid var(--dark-text);
+    border-radius: 10px;
+    color: var(--dark-text);
+    padding: 10px;
+    width: 100%;
+}
+
+form button {
+    background-color: var(--primary-color);
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.table {
+    display: flex;
+    max-width: 600px;
+    overflow-y: auto;
+}
+
+table {
+    border-collapse: collapse ;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+}
+
+th, 
+td {
+    padding: .5rem;
+    border: 1px solid var(--light-background);
+}
+
+table button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+    transition: .3s ease-in-out;
+}
+
+table button i {
+    transition: .3s ease-in-out;
+}
+
+table button:hover i {
+    color: var(--light-text);
+}
+
+table .edit-btn:hover {
+    background-color: var(--primary-color);
+}
+
+table .delete-btn:hover {
+    background-color: var(--danger-color);
+}
+
+table button i {
+    font-size: 1.15rem;
+}
+
+table .edit-btn i {
+    color: var(--primary-color);
+}
+
+table .delete-btn i {
+    color: var(--danger-color);
+}
+
+@media screen and (max-width: 1130px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .table {
+        max-width: 100%;
+        min-height: 500px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    form {
+        width: 200px;
+    }
+}
